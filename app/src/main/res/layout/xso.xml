@@ -1,0 +1,207 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/prize1_text"
+            android:layout_width="71dp"
+            android:layout_height="wrap_content"
+            android:text="Giải nhất" />
+
+        <TextView
+            android:id="@+id/prize1_number"
+            android:layout_width="199dp"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <Button
+            android:id="@+id/prize1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quay số" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/prize2_text"
+            android:layout_width="71dp"
+            android:layout_height="wrap_content"
+            android:text="Giải nhì" />
+
+        <TextView
+            android:id="@+id/prize2_number"
+            android:layout_width="199dp"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <Button
+            android:id="@+id/prize2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quay số" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/prize3_text"
+            android:layout_width="71dp"
+            android:layout_height="wrap_content"
+            android:text="Giải 3" />
+
+        <TextView
+            android:id="@+id/prize3_number"
+            android:layout_width="199dp"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <Button
+            android:id="@+id/prize3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quay số" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/prize4_text"
+            android:layout_width="71dp"
+            android:layout_height="wrap_content"
+            android:text="Giải 4" />
+
+        <TextView
+            android:id="@+id/prize4_number"
+            android:layout_width="199dp"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <Button
+            android:id="@+id/prize4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quay số" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/prize5_text"
+            android:layout_width="71dp"
+            android:layout_height="wrap_content"
+            android:text="Giải 5" />
+
+        <TextView
+            android:id="@+id/prize5_number"
+            android:layout_width="199dp"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <Button
+            android:id="@+id/prize5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quay số" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/prize6_text"
+            android:layout_width="71dp"
+            android:layout_height="wrap_content"
+            android:text="Giải 6" />
+
+        <TextView
+            android:id="@+id/prize6_number"
+            android:layout_width="199dp"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <Button
+            android:id="@+id/prize6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quay số" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/prize7_text"
+            android:layout_width="71dp"
+            android:layout_height="wrap_content"
+            android:text="Giải 7" />
+
+        <TextView
+            android:id="@+id/prize7_number"
+            android:layout_width="199dp"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <Button
+            android:id="@+id/prize7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quay số" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/prize8_text"
+            android:layout_width="71dp"
+            android:layout_height="wrap_content"
+            android:text="Giải 8" />
+
+        <TextView
+            android:id="@+id/prize8_number"
+            android:layout_width="199dp"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <Button
+            android:id="@+id/prize8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quay số" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
