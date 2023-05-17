@@ -24,7 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:src="?attr/actionModePasteDrawable"
+        android:src="@android:drawable/ic_menu_rotate"
         app:layout_anchor="@id/recyclerView"
         app:layout_anchorGravity="bottom|right|end" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

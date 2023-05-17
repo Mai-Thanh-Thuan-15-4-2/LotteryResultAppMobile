@@ -1,12 +1,11 @@
 package com.example.kqxs;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.os.Bundle;
 import android.view.View;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -18,11 +17,11 @@ import org.jsoup.select.Elements;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
+public class ShowKQXSMB extends AppCompatActivity {
 
-    private ArrayList<RssItem> rssItems;
+    private ArrayList<KQSXMB> rssItems;
     private RecyclerView recyclerView;
-    private RssAdapter adapter;
+    private KQXSMBAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
         rssItems = new ArrayList<>();
         recyclerView = findViewById(R.id.recyclerView);
-        adapter = new RssAdapter(rssItems);
+        adapter = new KQXSMBAdapter(rssItems);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(adapter);
 
@@ -53,13 +52,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
                 try {
-                    Document rssDocument = Jsoup.connect("https://ketqua247vn.com/rss/xsmb-thu-2.rss").get();
+                    Document rssDocument = Jsoup.connect("https://www.sirinbebeayakkabi.com/rssfeed/xsMB.rss").get();
                     Elements items = rssDocument.select("item");
                     for (Element item : items) {
                         String title = item.selectFirst("title").text();
+                        String des = item.selectFirst("description").text();
                         String pubDate = item.selectFirst("pubDate").text();
 
-                        RssItem rssItem = new RssItem(title, pubDate);
+                        KQSXMB rssItem = new KQSXMB(title, des, pubDate);
                         rssItems.add(rssItem);
                     }
 

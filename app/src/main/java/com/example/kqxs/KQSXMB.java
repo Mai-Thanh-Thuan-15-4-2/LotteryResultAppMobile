@@ -1,12 +1,14 @@
 package com.example.kqxs;
 
-public class RssItem {
+public class KQSXMB {
     private String title;
     private String description;
+    private String date;
 
-    public RssItem(String title, String description) {
+    public KQSXMB(String title, String description, String date) {
         this.title = title;
         this.description = description;
+        this.date = date;
     }
 
     public String getTitle() {
@@ -21,5 +23,14 @@ public class RssItem {
     public void setDescription(String description) {
         this.description = description;
     }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
 }
 
