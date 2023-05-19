@@ -12,9 +12,9 @@ import java.util.ArrayList;
 
 public class KQXSMBAdapter extends RecyclerView.Adapter<KQXSMBAdapter.RssViewHolder> {
 
-    private ArrayList<KQSXMB> rssItems;
+    private ArrayList<KQXSModel> rssItems;
 
-    public KQXSMBAdapter(ArrayList<KQSXMB> rssItems) {
+    public KQXSMBAdapter(ArrayList<KQXSModel> rssItems) {
         this.rssItems = rssItems;
     }
 
@@ -27,7 +27,7 @@ public class KQXSMBAdapter extends RecyclerView.Adapter<KQXSMBAdapter.RssViewHol
 
     @Override
     public void onBindViewHolder(@NonNull RssViewHolder holder, int position) {
-        KQSXMB rssItem = rssItems.get(position);
+        KQXSModel rssItem = rssItems.get(position);
         holder.textViewTitle.setText(rssItem.getTitle());
         holder.textViewDate.setText(rssItem.getDate());
         holder.textViewDB.setText(getDBString(rssItem.getDescription()));
