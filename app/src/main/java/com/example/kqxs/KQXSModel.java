@@ -1,11 +1,11 @@
 package com.example.kqxs;
 
-public class KQSXMB {
+public class KQXSModel {
     private String title;
     private String description;
     private String date;
 
-    public KQSXMB(String title, String description, String date) {
+    public KQXSModel(String title, String description, String date) {
         this.title = title;
         this.description = description;
         this.date = date;

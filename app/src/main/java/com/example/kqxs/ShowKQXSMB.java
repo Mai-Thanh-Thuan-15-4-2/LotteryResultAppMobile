@@ -19,7 +19,7 @@ import java.util.ArrayList;
 
 public class ShowKQXSMB extends AppCompatActivity {
 
-    private ArrayList<KQSXMB> rssItems;
+    private ArrayList<KQXSModel> rssItems;
     private RecyclerView recyclerView;
     private KQXSMBAdapter adapter;
 
@@ -59,8 +59,8 @@ public class ShowKQXSMB extends AppCompatActivity {
                         String des = item.selectFirst("description").text();
                         String pubDate = item.selectFirst("pubDate").text();
 
-                        KQSXMB rssItem = new KQSXMB(title, des, pubDate);
-                        rssItems.add(rssItem);
+                        KQXSModel kqxsmb = new KQXSModel(title, des, pubDate);
+                        rssItems.add(kqxsmb);
                     }
 
                     runOnUiThread(new Runnable() {

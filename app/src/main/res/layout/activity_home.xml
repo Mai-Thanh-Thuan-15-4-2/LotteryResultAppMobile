@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:background="#FAC67A"
+    android:gravity="center"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Danh mục chức năng"
+        android:layout_height="56dp"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:background="#fd9606" />
+        </LinearLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:stretchColumns="0,1,2">
+        <TableRow
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:paddingTop="15dp" >
+            <ImageButton
+                android:onClick="GoKetqua"
+                android:id="@+id/igmKetqua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:background="@drawable/image_main"
+                android:src="@mipmap/photo" />
+            <ImageButton
+                android:id="@+id/imgquaythu"
+                android:onClick="GoQuaythu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:background="@drawable/image_main"
+                android:src="@mipmap/quaythu" />
+            <ImageButton
+                android:id="@+id/imgthongke"
+                android:onClick="GoThongke"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:background="@drawable/image_main"
+                android:src="@mipmap/thongke" />
+        </TableRow>
+        <TableRow
+            android:layout_gravity="center"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/txtKQSX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Kết quả" />
+            <TextView
+                android:id="@+id/txtTTSX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Quay thử" />
+            <TextView
+                android:id="@+id/txtthongke"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Thống kê" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:paddingTop="5dp">
+            <ImageButton
+                android:id="@+id/imgKQSX2"
+                android:onClick="GoTuongthuat"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:background="@drawable/image_main"
+                android:src="@mipmap/tuongthuat" />
+            <ImageButton
+                android:id="@+id/imgketquadai"
+                android:onClick="GoKetquadai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:background="@drawable/image_main"
+                android:src="@mipmap/ketquandai" />
+            <ImageButton
+                android:id="@+id/imgSC2"
+                android:onClick="GoHomnay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:background="@drawable/image_main"
+                android:src="@mipmap/homnay" />
+        </TableRow>
+        <TableRow
+            android:layout_gravity="center"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/txtKQSX2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Tường thuật" />
+            <TextView
+                android:id="@+id/txtketquadai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Kết quả đài" />
+            <TextView
+                android:id="@+id/txthomnay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Hôm nay" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:paddingTop="5dp">
+            <ImageButton
+                android:id="@+id/imgKQSX3"
+                android:onClick="GoSoicau"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:background="@drawable/image_main"
+                android:src="@mipmap/soicau" />
+            <ImageButton
+                android:id="@+id/imgTT3"
+                android:onClick="GoThamkhao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:background="@drawable/image_main"
+                android:src="@mipmap/thamkhao" />
+            <ImageButton
+                android:id="@+id/imgSC3"
+                android:onClick="GoSoket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:background="@drawable/image_main"
+                android:src="@mipmap/soket" />
+        </TableRow>
+
+        <TableRow
+            android:layout_gravity="center"
+            android:paddingTop="5dp">
+            <TextView
+                android:id="@+id/txtKQSX3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Soi cầu" />
+
+            <TextView
+                android:id="@+id/txtTTSX3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Tham khảo" />
+            <TextView
+                android:id="@+id/txtSCSX3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Số kết" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:paddingTop="5dp">
+
+            <ImageButton
+                android:id="@+id/imgKQSX4"
+                android:onClick="GoTuvi"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:background="@drawable/image_main"
+                android:src="@mipmap/tuvi" />
+
+            <ImageButton
+                android:id="@+id/imgTT4"
+                android:onClick="GoTracuu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:background="@drawable/image_main"
+                android:src="@mipmap/tracuu" />
+
+            <ImageButton
+                android:id="@+id/imgSC4"
+                android:onClick="GoTienich"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:background="@drawable/image_main"
+                android:src="@mipmap/cauhinh" />
+        </TableRow>
+        <TableRow
+            android:layout_gravity="center"
+            android:paddingTop="5dp">
+            <TextView
+                android:id="@+id/txtKQSX4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Tử vi" />
+
+            <TextView
+                android:id="@+id/txtTTSX4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Tra cứu" />
+
+            <TextView
+                android:id="@+id/txtSCSX4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Tiện ích" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
