@@ -9,19 +9,18 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
-
-public class KQXSMBAdapter extends RecyclerView.Adapter<KQXSMBAdapter.RssViewHolder> {
+public class KQXSAGAdapter extends RecyclerView.Adapter<KQXSAGAdapter.RssViewHolder> {
 
     private ArrayList<KQXSModel> rssItems;
 
-    public KQXSMBAdapter(ArrayList<KQXSModel> rssItems) {
+    public KQXSAGAdapter(ArrayList<KQXSModel> rssItems) {
         this.rssItems = rssItems;
     }
 
     @NonNull
     @Override
     public RssViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.kqxsmb, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.kqxsangiang, parent, false);
         return new RssViewHolder(view);
     }
 
@@ -38,47 +37,53 @@ public class KQXSMBAdapter extends RecyclerView.Adapter<KQXSMBAdapter.RssViewHol
         holder.textViewG5.setText(getG5String(kqxsModel.getDescription()));
         holder.textViewG6.setText(getG6String(kqxsModel.getDescription()));
         holder.textViewG7.setText(getG7String(kqxsModel.getDescription()));
+        holder.textViewG8.setText(getG8String(kqxsModel.getDescription()));
     }
 
     private String getDBString(String description) {
-        GetKQXSMB parser = new GetKQXSMB(description);
+        GetKQXS parser = new GetKQXS(description);
         String DB = String.valueOf(parser.getSpecialPrize());
         return  DB;
     }
     private String getG1String(String description) {
-        GetKQXSMB parser = new GetKQXSMB(description);
+        GetKQXS parser = new GetKQXS(description);
         String G1 = String.valueOf(parser.getFirstPrize());
         return  G1;
     }
     private String getG2String(String description) {
-        GetKQXSMB parser = new GetKQXSMB(description);
-        String[] g2 = parser.getSecondPrize();
-        return  g2[0] + " - " + g2[1];
+        GetKQXS parser = new GetKQXS(description);
+        String G2 = String.valueOf(parser.getSecondPrize());
+        return  G2;
     }
     private String getG3String(String description) {
-        GetKQXSMB parser = new GetKQXSMB(description);
+        GetKQXS parser = new GetKQXS(description);
         String[] g3 = parser.getThirdPrize();
-        return  g3[0] + " - " + g3[1] + " - " + g3[2] + " - " + g3[3] + " - " + g3[4] + " " + g3[5];
+        return  g3[0] + " - " + g3[1];
     }
     private String getG4String(String description) {
-        GetKQXSMB parser = new GetKQXSMB(description);
+        GetKQXS parser = new GetKQXS(description);
         String[] g4 = parser.getFourthPrize();
-        return  g4[0] + " - " + g4[1] + " - " + g4[2] + " - " + g4[3];
+        return  g4[0] + " - " + g4[1] + " - " + g4[2] + " - " + g4[3] + " - " + g4[4] + "  " + g4[5] + " - " + g4[6];
     }
     private String getG5String(String description) {
-        GetKQXSMB parser = new GetKQXSMB(description);
-        String[] g5 = parser.getFifthPrize();
-        return  g5[0] + " - " + g5[1] + " - " + g5[2] + " - " + g5[3] + " - " + g5[4] + " - " + g5[5];
+        GetKQXS parser = new GetKQXS(description);
+        String g5 = parser.getFifthPrize();
+        return  g5;
     }
     private String getG6String(String description) {
-        GetKQXSMB parser = new GetKQXSMB(description);
+        GetKQXS parser = new GetKQXS(description);
         String[] g6 = parser.getSixthPrize();
         return  g6[0] + " - " + g6[1] + " - " + g6[2];
     }
     private String getG7String(String description) {
-        GetKQXSMB parser = new GetKQXSMB(description);
-        String[] g7 = parser.getSeventhPrize();
-        return  g7[0] + " - " + g7[1] + " - " + g7[2] + " - " + g7[3];
+        GetKQXS parser = new GetKQXS(description);
+        String g7 = parser.getSeventhPrize();
+        return  g7;
+    }
+    private String getG8String(String description) {
+        GetKQXS parser = new GetKQXS(description);
+        String g8 = parser.getEightthPrize();
+        return  g8;
     }
 
     @Override
@@ -98,21 +103,24 @@ public class KQXSMBAdapter extends RecyclerView.Adapter<KQXSMBAdapter.RssViewHol
         TextView textViewG5;
         TextView textViewG6;
         TextView textViewG7;
+        TextView textViewG8;
 
         RssViewHolder(View itemView) {
             super(itemView);
 
-            textViewTitle = itemView.findViewById(R.id.textViewTitle);
-            textViewDate = itemView.findViewById(R.id.textViewDate);
-            textViewDB = itemView.findViewById(R.id.textViewDBMB);
-            textViewG1 = itemView.findViewById(R.id.textViewG1MB);
-            textViewG2 = itemView.findViewById(R.id.textViewG2MB);
-            textViewG3 = itemView.findViewById(R.id.textViewG3MB);
-            textViewG4 = itemView.findViewById(R.id.textViewG4MB);
-            textViewG5 = itemView.findViewById(R.id.textViewG5MB);
-            textViewG6 = itemView.findViewById(R.id.textViewG6MB);
-            textViewG7 = itemView.findViewById(R.id.textViewG7MB);
+            textViewTitle = itemView.findViewById(R.id.textViewTitleAG);
+            textViewDate = itemView.findViewById(R.id.textViewDateAG);
+            textViewDB = itemView.findViewById(R.id.textViewGDBAG);
+            textViewG1 = itemView.findViewById(R.id.textViewG1AG);
+            textViewG2 = itemView.findViewById(R.id.textViewG2AG);
+            textViewG3 = itemView.findViewById(R.id.textViewG3AG);
+            textViewG4 = itemView.findViewById(R.id.textViewG4AG);
+            textViewG5 = itemView.findViewById(R.id.textViewG5AG);
+            textViewG6 = itemView.findViewById(R.id.textViewG6AG);
+            textViewG7 = itemView.findViewById(R.id.textViewG7AG);
+            textViewG8 = itemView.findViewById(R.id.textViewG8AG);
         }
     }
 }
+
 

@@ -18,47 +18,48 @@ import org.jsoup.select.Elements;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class ShowKQXSMB extends AppCompatActivity {
+public class ShowKQXSAG extends AppCompatActivity {
 
     private ArrayList<KQXSModel> rssItems;
     private RecyclerView recyclerView;
-    private KQXSMBAdapter adapter;
+    private KQXSAGAdapter adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.ac_kqxsmb);
+        setContentView(R.layout.ac_kqxsangiang);
+
 
         rssItems = new ArrayList<>();
-        recyclerView = findViewById(R.id.recyclerView);
-        adapter = new KQXSMBAdapter(rssItems);
+        recyclerView = findViewById(R.id.recyclerViewAG);
+        adapter = new KQXSAGAdapter(rssItems);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(adapter);
 
-        FloatingActionButton fab = findViewById(R.id.xsmbBackHome);
+       FloatingActionButton fab = findViewById(R.id.xsagBackHome);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ShowKQXSMB.this, Home.class);
+                Intent intent = new Intent(ShowKQXSAG.this, Home.class);
                 startActivity(intent);
             }
         });
-        loadRssMB();
+        loadRssAG();
     }
 
-    private void loadRssMB() {
+    private void loadRssAG() {
         new Thread(new Runnable() {
             @Override
             public void run() {
                 try {
-                    Document rssDocument = Jsoup.connect("https://kqxs.net.vn/rss-feed/xo-so-mien-bac-xsmb-xstd.rss").get();
+                    Document rssDocument = Jsoup.connect("https://kqxs.net.vn/rss-feed/xo-so-an-giang-xsag.rss").get();
                     Elements items = rssDocument.select("item");
                     for (Element item : items) {
                         String title = item.selectFirst("title").text();
                         String des = item.selectFirst("description").text();
                         String pubDate = item.selectFirst("pubDate").text();
 
-                        KQXSModel kqxsmb = new KQXSModel(title, des, pubDate);
-                        rssItems.add(kqxsmb);
+                        KQXSModel kqxsag = new KQXSModel(title, des, pubDate);
+                        rssItems.add(kqxsag);
                     }
 
                     runOnUiThread(new Runnable() {
@@ -75,3 +76,4 @@ public class ShowKQXSMB extends AppCompatActivity {
         }).start();
     }
 }
+
