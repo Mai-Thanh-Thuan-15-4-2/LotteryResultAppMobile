@@ -12,7 +12,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textViewTitle"
+            android:id="@+id/textViewTitleAG"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="16sp"
@@ -22,7 +22,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textViewDate"
+            android:id="@+id/textViewDateAG"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="center"
@@ -35,19 +35,19 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textViewDBlb"
+                android:id="@+id/textViewG8lbAG"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginTop="8dp"
                 android:layout_marginLeft="8dp"
                 android:textColor="@color/blue_grey_900"
-                android:text="Giải đặc biệt:"
+                android:text="Giải tám:"
                 android:textSize="16sp"
                 android:gravity="start" />
 
             <TextView
-                android:id="@+id/textViewDBMB"
+                android:id="@+id/textViewG8AG"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -63,169 +63,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textViewG1lb"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_marginTop="8dp"
-                android:layout_marginLeft="8dp"
-                android:textColor="@color/blue_grey_900"
-                android:text="Giải nhất:"
-                android:textSize="16sp"
-                android:gravity="start" />
-
-            <TextView
-                android:id="@+id/textViewG1MB"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:textColor="@color/blue_grey_900"
-                android:textSize="16sp" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textViewG2lb"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_marginTop="8dp"
-                android:layout_marginLeft="8dp"
-                android:textColor="@color/blue_grey_900"
-                android:text="Giải nhì:"
-                android:textSize="16sp"
-                android:gravity="start" />
-
-            <TextView
-                android:id="@+id/textViewG2MB"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:textColor="@color/blue_grey_900"
-                android:textSize="16sp" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textViewG3lb"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_marginTop="8dp"
-                android:layout_marginLeft="8dp"
-                android:textColor="@color/blue_grey_900"
-                android:text="Giải ba:"
-                android:textSize="16sp"
-                android:gravity="start" />
-
-            <TextView
-                android:id="@+id/textViewG3MB"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:textColor="@color/blue_grey_900"
-                android:textSize="16sp" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textViewG4lb"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_marginTop="8dp"
-                android:layout_marginLeft="8dp"
-                android:textColor="@color/blue_grey_900"
-                android:text="Giải tư:"
-                android:textSize="16sp"
-                android:gravity="start" />
-
-            <TextView
-                android:id="@+id/textViewG4MB"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:textColor="@color/blue_grey_900"
-                android:textSize="16sp" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textViewG5lb"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_marginTop="8dp"
-                android:layout_marginLeft="8dp"
-                android:textColor="@color/blue_grey_900"
-                android:text="Giải năm:"
-                android:textSize="16sp"
-                android:gravity="start" />
-
-            <TextView
-                android:id="@+id/textViewG5MB"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:textColor="@color/blue_grey_900"
-                android:textSize="16sp" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textViewG6lb"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_marginTop="8dp"
-                android:layout_marginLeft="8dp"
-                android:textColor="@color/blue_grey_900"
-                android:text="Giải sáu:"
-                android:textSize="16sp"
-                android:gravity="start" />
-
-            <TextView
-                android:id="@+id/textViewG6MB"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:textColor="@color/blue_grey_900"
-                android:textSize="16sp" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textViewG7lb"
+                android:id="@+id/textViewG7lbAG"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -237,17 +75,205 @@
                 android:gravity="start" />
 
             <TextView
-                android:id="@+id/textViewG7MB"
+                android:id="@+id/textViewG7AG"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/blue_grey_900"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewG6lbAG"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:textColor="@color/blue_grey_900"
+                android:text="Giải sáu:"
+                android:textSize="16sp"
+                android:gravity="start" />
+            <TextView
+                android:id="@+id/textViewG6AG"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/blue_grey_900"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewG5lbAG"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:textColor="@color/blue_grey_900"
+                android:text="Giải năm:"
+                android:textSize="16sp"
+                android:gravity="start" />
+
+            <TextView
+                android:id="@+id/textViewG5AG"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/blue_grey_900"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewG4lbAG"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:textColor="@color/blue_grey_900"
+                android:text="Giải tư:"
+                android:textSize="16sp"
+                android:gravity="start" />
+
+            <TextView
+                android:id="@+id/textViewG4AG"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/blue_grey_900"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewG3lbAG"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:textColor="@color/blue_grey_900"
+                android:text="Giải ba:"
+                android:textSize="16sp"
+                android:gravity="start" />
+
+            <TextView
+                android:id="@+id/textViewG3AG"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/blue_grey_900"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewG2lbAG"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:textColor="@color/blue_grey_900"
+                android:text="Giải nhì:"
+                android:textSize="16sp"
+                android:gravity="start" />
+
+            <TextView
+                android:id="@+id/textViewG2AG"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/blue_grey_900"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewG1lbAG"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:textColor="@color/blue_grey_900"
+                android:text="Giải nhất:"
+                android:textSize="16sp"
+                android:gravity="start" />
+
+            <TextView
+                android:id="@+id/textViewG1AG"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:textColor="@color/blue_grey_900"
+                android:gravity="center"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewGBlbAG"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:textColor="@color/blue_grey_900"
+                android:text="Giải ĐB:"
+                android:textSize="16sp"
+                android:gravity="start" />
+
+            <TextView
+                android:id="@+id/textViewGDBAG"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:layout_marginBottom="8dp"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:textColor="@color/green_700"
+                android:textColor="@color/red_500"
                 android:textSize="20sp" />
         </LinearLayout>
-
 
     </LinearLayout>
 
