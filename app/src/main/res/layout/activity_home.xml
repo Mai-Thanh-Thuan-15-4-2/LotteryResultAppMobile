@@ -38,7 +38,7 @@
                 android:layout_marginRight="23dp"
                 android:background="@drawable/image_main"
                 android:foreground="@drawable/image_main_foreground"
-                android:src="@mipmap/photo" />
+                android:src="@mipmap/xsmn" />
             <ImageButton
                 android:id="@+id/imkqmt"
                 android:layout_width="wrap_content"
@@ -47,7 +47,7 @@
                 android:layout_marginRight="23dp"
                 android:background="@drawable/image_main"
                 android:foreground="@drawable/image_main_foreground"
-                android:src="@mipmap/thongke" />
+                android:src="@mipmap/photo" />
             <ImageButton
                 android:id="@+id/imgkqmb"
                 android:layout_width="wrap_content"
@@ -56,7 +56,7 @@
                 android:layout_marginRight="23dp"
                 android:background="@drawable/image_main"
                 android:foreground="@drawable/image_main_foreground"
-                android:src="@mipmap/quaythu" />
+                android:src="@mipmap/xsmb" />
         </TableRow>
         <TableRow
             android:layout_gravity="center"
@@ -88,14 +88,14 @@
             android:layout_gravity="center"
             android:paddingTop="5dp">
             <ImageButton
-                android:id="@+id/imgkqhn"
+                android:id="@+id/imgcalender"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:layout_marginLeft="23dp"
                 android:layout_marginRight="23dp"
                 android:background="@drawable/image_main"
                 android:foreground="@drawable/image_main_foreground"
-                android:src="@mipmap/tuongthuat" />
+                android:src="@mipmap/lich" />
             <ImageButton
                 android:id="@+id/imgkqd"
                 android:layout_width="wrap_content"
@@ -124,7 +124,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Hôm nay" />
+                android:text="Lịch" />
             <TextView
                 android:id="@+id/txtkqd"
                 android:layout_width="wrap_content"
@@ -210,7 +210,7 @@
                 android:layout_marginRight="23dp"
                 android:background="@drawable/image_main"
                 android:foreground="@drawable/image_main_foreground"
-                android:src="@mipmap/tuvi" />
+                android:src="@mipmap/news" />
 
             <ImageButton
                 android:id="@+id/imggt"

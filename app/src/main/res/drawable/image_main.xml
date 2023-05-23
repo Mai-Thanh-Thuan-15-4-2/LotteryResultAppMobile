@@ -2,11 +2,6 @@
 android:shape="rectangle">
 
 <solid android:color="#FCFEFE"></solid>
-
-<stroke
-    android:width="2dp"
-    android:color="#FCFEFE"></stroke>
-
 <padding
     android:bottom="5dp"
     android:left="2dp"
@@ -14,5 +9,8 @@ android:shape="rectangle">
     android:top="5dp"></padding>
 
 <corners android:radius="5dp"></corners>
+    <stroke
+        android:width="3dp"
+        android:color="#14299F"/>
 
 </shape>

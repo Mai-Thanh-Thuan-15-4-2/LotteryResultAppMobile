@@ -9,11 +9,11 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
-public class KQXSAGAdapter extends RecyclerView.Adapter<KQXSAGAdapter.RssViewHolder> {
+public class KQXSTTHAdapter extends RecyclerView.Adapter<KQXSTTHAdapter.RssViewHolder> {
 
     private ArrayList<KQXSModel> rssItems;
 
-    public KQXSAGAdapter(ArrayList<KQXSModel> rssItems) {
+    public KQXSTTHAdapter(ArrayList<KQXSModel> rssItems) {
         this.rssItems = rssItems;
     }
 

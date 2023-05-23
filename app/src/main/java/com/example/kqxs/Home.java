@@ -31,5 +31,37 @@ import androidx.appcompat.app.AppCompatActivity;
                 startActivity(intent);
             }
         });
+            ImageButton imgcalender = findViewById(R.id.imgcalender);
+            imgcalender.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(Home.this, Calender.class);
+                    startActivity(intent);
+                }
+            });
+            ImageButton imgdt123 = findViewById(R.id.imgdt123);
+            imgdt123.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(Home.this, ShowKQXSDT123.class);
+                    startActivity(intent);
+                }
+            });
+            ImageButton imgdt636 = findViewById(R.id.imgdt6x36);
+            imgdt636.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(Home.this, ShowKQXSDT636.class);
+                    startActivity(intent);
+                }
+            });
+            ImageButton imgtt4 = findViewById(R.id.imgtt4);
+            imgtt4.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(Home.this, ShowKQXSTT4.class);
+                    startActivity(intent);
+                }
+            });
      }
     }
