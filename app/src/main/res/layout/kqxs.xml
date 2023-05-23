@@ -12,17 +12,17 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textViewTitleAG"
+            android:id="@+id/textViewTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
+            android:textSize="14sp"
             android:layout_marginTop="10dp"
             android:textAlignment="center"
             android:textColor="@color/purple_500"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textViewDateAG"
+            android:id="@+id/textViewDate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="center"
@@ -35,7 +35,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textViewG8lbAG"
+                android:id="@+id/textViewG8lb"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -47,7 +47,7 @@
                 android:gravity="start" />
 
             <TextView
-                android:id="@+id/textViewG8AG"
+                android:id="@+id/textViewG8"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -63,7 +63,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textViewG7lbAG"
+                android:id="@+id/textViewG7lb"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -75,7 +75,7 @@
                 android:gravity="start" />
 
             <TextView
-                android:id="@+id/textViewG7AG"
+                android:id="@+id/textViewG7"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -90,7 +90,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textViewG6lbAG"
+                android:id="@+id/textViewG6lb"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -101,7 +101,7 @@
                 android:textSize="16sp"
                 android:gravity="start" />
             <TextView
-                android:id="@+id/textViewG6AG"
+                android:id="@+id/textViewG6"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -116,7 +116,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textViewG5lbAG"
+                android:id="@+id/textViewG5lb"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -128,7 +128,7 @@
                 android:gravity="start" />
 
             <TextView
-                android:id="@+id/textViewG5AG"
+                android:id="@+id/textViewG5"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -143,7 +143,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textViewG4lbAG"
+                android:id="@+id/textViewG4lb"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -155,7 +155,7 @@
                 android:gravity="start" />
 
             <TextView
-                android:id="@+id/textViewG4AG"
+                android:id="@+id/textViewG4"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -170,7 +170,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textViewG3lbAG"
+                android:id="@+id/textViewG3lb"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -182,7 +182,7 @@
                 android:gravity="start" />
 
             <TextView
-                android:id="@+id/textViewG3AG"
+                android:id="@+id/textViewG3"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -197,7 +197,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textViewG2lbAG"
+                android:id="@+id/textViewG2lb"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -209,7 +209,7 @@
                 android:gravity="start" />
 
             <TextView
-                android:id="@+id/textViewG2AG"
+                android:id="@+id/textViewG2"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -224,7 +224,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textViewG1lbAG"
+                android:id="@+id/textViewG1lb"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -236,7 +236,7 @@
                 android:gravity="start" />
 
             <TextView
-                android:id="@+id/textViewG1AG"
+                android:id="@+id/textViewG1"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -252,7 +252,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textViewGBlbAG"
+                android:id="@+id/textViewGBlb"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -264,7 +264,7 @@
                 android:gravity="start" />
 
             <TextView
-                android:id="@+id/textViewGDBAG"
+                android:id="@+id/textViewGDB"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"

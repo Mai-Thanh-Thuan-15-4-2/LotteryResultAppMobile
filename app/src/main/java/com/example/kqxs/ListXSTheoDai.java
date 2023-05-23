@@ -29,5 +29,61 @@ public class ListXSTheoDai extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        Button btn_tn = findViewById(R.id.kqxstn);
+        btn_tn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ListXSTheoDai.this, ShowKQXSTNh.class);
+                startActivity(intent);
+            }
+        });
+        Button btn_tth = findViewById(R.id.kqxstth);
+        btn_tth.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ListXSTheoDai.this, ShowKQXSTTH.class);
+                startActivity(intent);
+            }
+        });
+        Button btn_tv = findViewById(R.id.kqxstv);
+        btn_tv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ListXSTheoDai.this, ShowKQXSTV.class);
+                startActivity(intent);
+            }
+        });
+        Button btn_vl = findViewById(R.id.kqxsvl);
+        btn_vl.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ListXSTheoDai.this, ShowKQXSVL.class);
+                startActivity(intent);
+            }
+        });
+        Button btn_vt = findViewById(R.id.kqxsvt);
+        btn_vt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ListXSTheoDai.this, ShowKQXSVT.class);
+                startActivity(intent);
+            }
+        });
+        Button btn_kt = findViewById(R.id.kqxskt);
+        btn_kt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ListXSTheoDai.this, ShowKQXSKT.class);
+                startActivity(intent);
+            }
+        });
+        Button btn_la = findViewById(R.id.kqxsla);
+        btn_la.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ListXSTheoDai.this, ShowKQXSLA.class);
+                startActivity(intent);
+            }
+        });
     }
 }

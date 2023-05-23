@@ -69,4 +69,5 @@
     <color name="grey_400">#FFBDBDBD</color>
     <color name="grey_300">#FFD4D4D4</color>
     <color name="grey_100">#FFF5F5F5</color>
+    <color name="transparent">#00000000</color>
 </resources>

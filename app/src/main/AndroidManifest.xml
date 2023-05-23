@@ -7,7 +7,7 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@drawable/ic_launcher_foreground"
+        android:icon="@mipmap/tuongthuat"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
@@ -19,7 +19,40 @@
             android:name=".ListXSTheoDai"
             android:exported="false"/>
         <activity
+            android:name=".Calender"
+            android:exported="false"/>
+        <activity
             android:name=".ShowKQXSAG"
+            android:exported="false"/>
+        <activity
+            android:name=".ShowKQXSTNh"
+            android:exported="false"/>
+        <activity
+            android:name=".ShowKQXSTTH"
+            android:exported="false"/>
+        <activity
+            android:name=".ShowKQXSTV"
+            android:exported="false"/>
+        <activity
+            android:name=".ShowKQXSVL"
+            android:exported="false"/>
+        <activity
+            android:name=".ShowKQXSVT"
+            android:exported="false"/>
+        <activity
+            android:name=".ShowKQXSKT"
+            android:exported="false"/>
+        <activity
+            android:name=".ShowKQXSLA"
+            android:exported="false"/>
+        <activity
+            android:name=".ShowKQXSDT123"
+            android:exported="false"/>
+        <activity
+            android:name=".ShowKQXSDT636"
+            android:exported="false"/>
+        <activity
+            android:name=".ShowKQXSTT4"
             android:exported="false"/>
         <activity
             android:name=".Home"
@@ -30,5 +63,4 @@
             </intent-filter>
         </activity>
     </application>
-
 </manifest>

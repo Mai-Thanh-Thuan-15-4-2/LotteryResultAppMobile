@@ -18,11 +18,11 @@ import org.jsoup.select.Elements;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class ShowKQXSAG extends AppCompatActivity {
+public class ShowKQXSTNh extends AppCompatActivity {
 
     private ArrayList<KQXSModel> rssItems;
     private RecyclerView recyclerView;
-    private KQXSAGAdapter adapter;
+    private KQXSTNhAdapter adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,35 +31,35 @@ public class ShowKQXSAG extends AppCompatActivity {
 
         rssItems = new ArrayList<>();
         recyclerView = findViewById(R.id.recyclerView);
-        adapter = new KQXSAGAdapter(rssItems);
+        adapter = new KQXSTNhAdapter(rssItems);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(adapter);
 
-       FloatingActionButton fab = findViewById(R.id.xsBackHome);
+        FloatingActionButton fab = findViewById(R.id.xsBackHome);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ShowKQXSAG.this, ListXSTheoDai.class);
+                Intent intent = new Intent(ShowKQXSTNh.this, ListXSTheoDai.class);
                 startActivity(intent);
             }
         });
-        loadRssAG();
+        loadRssTN();
     }
 
-    private void loadRssAG() {
+    private void loadRssTN() {
         new Thread(new Runnable() {
             @Override
             public void run() {
                 try {
-                    Document rssDocument = Jsoup.connect("https://kqxs.net.vn/rss-feed/xo-so-an-giang-xsag.rss").get();
+                    Document rssDocument = Jsoup.connect("https://kqxs.net.vn/rss-feed/xo-so-tay-ninh-xstn.rss").get();
                     Elements items = rssDocument.select("item");
                     for (Element item : items) {
                         String title = item.selectFirst("title").text();
                         String des = item.selectFirst("description").text();
                         String pubDate = item.selectFirst("pubDate").text();
 
-                        KQXSModel kqxsag = new KQXSModel(title, des, pubDate);
-                        rssItems.add(kqxsag);
+                        KQXSModel kqxstnh = new KQXSModel(title, des, pubDate);
+                        rssItems.add(kqxstnh);
                     }
 
                     runOnUiThread(new Runnable() {
