@@ -54,6 +54,35 @@
         <activity
             android:name=".ShowKQXSTT4"
             android:exported="false"/>
+<!---->
+        <activity
+            android:name=".ShowKQXSTG"
+            android:exported="false"/>
+        <activity
+            android:name=".ShowKQXSSOC"
+            android:exported="false"/>
+        <activity
+            android:name=".ShowKQXSQT"
+            android:exported="false"/>
+        <activity
+            android:name=".ShowKQXSQNAM"
+            android:exported="false"/>
+        <activity
+            android:name=".ShowKQXSQN"
+            android:exported="false"/>
+        <activity
+            android:name=".ShowKQXSQB"
+            android:exported="false"/>
+        <activity
+            android:name=".ShowKQXSPY"
+            android:exported="false"/>
+        <activity
+            android:name=".ShowKQXSNT"
+            android:exported="false"/>
+        <activity
+            android:name=".ShowKQXSLAMDONG"
+            android:exported="false"/>
+
         <activity
             android:name=".Home"
             android:exported="true">

@@ -147,14 +147,14 @@
 
             <Button
                 android:id="@+id/kqxsđn"
-                android:layout_marginTop="8dp"
-                android:layout_width= "match_parent"
-                android:textSize="13dp"
-                android:layout_gravity="center"
-                android:foreground="@drawable/image_main_foreground"
-                android:background="@drawable/button_bg"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="xổ số Đắc Nông" />
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button_bg"
+                android:foreground="@drawable/image_main_foreground"
+                android:text="xổ số Đắc Nông"
+                android:textSize="13dp" />
 
             <Button
                 android:id="@+id/kqxsdt"
