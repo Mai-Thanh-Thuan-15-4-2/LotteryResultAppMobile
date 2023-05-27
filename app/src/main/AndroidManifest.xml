@@ -7,20 +7,109 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/tuongthuat"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.KQXS"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:targetApi="31">
         <activity
             android:name=".ShowKQXSMB"
+            android:exported="false"/>
+        <activity
+            android:name=".ListXSTheoDai"
+            android:exported="false"/>
+        <activity
+            android:name=".Calender"
+            android:exported="false"/>
+        <activity
+            android:name=".ShowKQXSAG"
+            android:exported="false"/>
+        <activity
+            android:name=".ShowKQXSTNh"
+            android:exported="false"/>
+        <activity
+            android:name=".ShowKQXSTTH"
+            android:exported="false"/>
+        <activity
+            android:name=".ShowKQXSTV"
+            android:exported="false"/>
+        <activity
+            android:name=".ShowKQXSVL"
+            android:exported="false"/>
+        <activity
+            android:name=".ShowKQXSVT"
+            android:exported="false"/>
+        <activity
+            android:name=".ShowKQXSKT"
+            android:exported="false"/>
+        <activity
+            android:name=".ShowKQXSLA"
+            android:exported="false"/>
+        <activity
+            android:name=".ShowKQXSDT123"
+            android:exported="false"/>
+        <activity
+            android:name=".ShowKQXSDT636"
+            android:exported="false"/>
+        <activity
+            android:name=".ShowKQXSTT4"
+            android:exported="false"/>
+<!---->
+        <activity
+            android:name=".ShowKQXSTG"
+            android:exported="false"/>
+        <activity
+            android:name=".ShowKQXSSOC"
+            android:exported="false"/>
+        <activity
+            android:name=".ShowKQXSQT"
+            android:exported="false"/>
+        <activity
+            android:name=".ShowKQXSQNAM"
+            android:exported="false"/>
+        <activity
+            android:name=".ShowKQXSQN"
+            android:exported="false"/>
+        <activity
+            android:name=".ShowKQXSQB"
+            android:exported="false"/>
+        <activity
+            android:name=".ShowKQXSPY"
+            android:exported="false"/>
+        <activity
+            android:name=".ShowKQXSNT"
+            android:exported="false"/>
+        <activity
+            android:name=".ShowKQXSLAMDONG"
+            android:exported="false"/>
+        <activity
+            android:name=".ShowKQXSBD"
+            android:exported="false"/>
+        <activity
+            android:name=".ShowKQXSBDH"
+            android:exported="false"/>
+        <activity
+            android:name=".ShowKQXSBL"
+            android:exported="false"/>
+        <activity
+            android:name=".ShowKQXSBP"
+            android:exported="false"/>
+        <activity
+            android:name=".ShowKQXSBT"
+            android:exported="false"/>
+        <activity
+            android:name=".ShowKQXSBTH"
+            android:exported="false"/>
+        <activity
+            android:name=".ShowKQXSCM"
+            android:exported="false"/>
+        <activity
+            android:name=".Home"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
-
 </manifest>

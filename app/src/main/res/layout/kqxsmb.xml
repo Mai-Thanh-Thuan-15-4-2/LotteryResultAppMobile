@@ -8,6 +8,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corners"
         android:orientation="vertical">
 
         <TextView
@@ -15,6 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="16sp"
+            android:layout_marginTop="10dp"
             android:textAlignment="center"
             android:textColor="@color/purple_500"
             android:textStyle="bold" />
@@ -38,13 +40,14 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
                 android:textColor="@color/blue_grey_900"
                 android:text="Giải đặc biệt:"
                 android:textSize="16sp"
                 android:gravity="start" />
 
             <TextView
-                android:id="@+id/textViewDB"
+                android:id="@+id/textViewDBMB"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -65,13 +68,14 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
                 android:textColor="@color/blue_grey_900"
                 android:text="Giải nhất:"
                 android:textSize="16sp"
                 android:gravity="start" />
 
             <TextView
-                android:id="@+id/textViewG1"
+                android:id="@+id/textViewG1MB"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -91,13 +95,14 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
                 android:textColor="@color/blue_grey_900"
                 android:text="Giải nhì:"
                 android:textSize="16sp"
                 android:gravity="start" />
 
             <TextView
-                android:id="@+id/textViewG2"
+                android:id="@+id/textViewG2MB"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -117,13 +122,14 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
                 android:textColor="@color/blue_grey_900"
                 android:text="Giải ba:"
                 android:textSize="16sp"
                 android:gravity="start" />
 
             <TextView
-                android:id="@+id/textViewG3"
+                android:id="@+id/textViewG3MB"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -143,13 +149,14 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
                 android:textColor="@color/blue_grey_900"
                 android:text="Giải tư:"
                 android:textSize="16sp"
                 android:gravity="start" />
 
             <TextView
-                android:id="@+id/textViewG4"
+                android:id="@+id/textViewG4MB"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -169,13 +176,14 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
                 android:textColor="@color/blue_grey_900"
                 android:text="Giải năm:"
                 android:textSize="16sp"
                 android:gravity="start" />
 
             <TextView
-                android:id="@+id/textViewG5"
+                android:id="@+id/textViewG5MB"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -195,13 +203,14 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
                 android:textColor="@color/blue_grey_900"
                 android:text="Giải sáu:"
                 android:textSize="16sp"
                 android:gravity="start" />
 
             <TextView
-                android:id="@+id/textViewG6"
+                android:id="@+id/textViewG6MB"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -221,16 +230,18 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
                 android:textColor="@color/blue_grey_900"
                 android:text="Giải bảy:"
                 android:textSize="16sp"
                 android:gravity="start" />
 
             <TextView
-                android:id="@+id/textViewG7"
+                android:id="@+id/textViewG7MB"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
                 android:layout_weight="1"
                 android:gravity="center"
                 android:textColor="@color/green_700"

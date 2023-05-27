@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:background="@mipmap/bgltr"
+    android:gravity="center"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Danh mục chức năng"
+        android:layout_height="56dp"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:background="#fd9606" />
+        </LinearLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:stretchColumns="0,1,2">
+        <TableRow
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:paddingTop="15dp" >
+            <ImageButton
+                android:id="@+id/igmkqmn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:background="@drawable/image_main"
+                android:foreground="@drawable/image_main_foreground"
+                android:src="@mipmap/xsmn" />
+            <ImageButton
+                android:id="@+id/imkqmt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:background="@drawable/image_main"
+                android:foreground="@drawable/image_main_foreground"
+                android:src="@mipmap/photo" />
+            <ImageButton
+                android:id="@+id/imgkqmb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:background="@drawable/image_main"
+                android:foreground="@drawable/image_main_foreground"
+                android:src="@mipmap/xsmb" />
+        </TableRow>
+        <TableRow
+            android:layout_gravity="center"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/txtmn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Miền Nam" />
+            <TextView
+                android:id="@+id/txtmt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Miền Trung" />
+            <TextView
+                android:id="@+id/txtmb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Miền Bắc" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:paddingTop="5dp">
+            <ImageButton
+                android:id="@+id/imgcalender"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:background="@drawable/image_main"
+                android:foreground="@drawable/image_main_foreground"
+                android:src="@mipmap/lich" />
+            <ImageButton
+                android:id="@+id/imgkqd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:background="@drawable/image_main"
+                android:foreground="@drawable/image_main_foreground"
+                android:src="@mipmap/ketquandai" />
+            <ImageButton
+                android:id="@+id/imgdt123"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:background="@drawable/image_main"
+                android:foreground="@drawable/image_main_foreground"
+                android:src="@mipmap/homnay" />
+        </TableRow>
+        <TableRow
+            android:layout_gravity="center"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/txthn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Lịch" />
+            <TextView
+                android:id="@+id/txtkqd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Kết quả đài" />
+            <TextView
+                android:id="@+id/txtdt123"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Điện toán 123" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:paddingTop="5dp">
+            <ImageButton
+                android:id="@+id/imgdt6x36"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:background="@drawable/image_main"
+                android:foreground="@drawable/image_main_foreground"
+                android:src="@mipmap/soicau" />
+            <ImageButton
+                android:id="@+id/imgtt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:background="@drawable/image_main"
+                android:foreground="@drawable/image_main_foreground"
+                android:src="@mipmap/thamkhao" />
+            <ImageButton
+                android:id="@+id/imgqt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:background="@drawable/image_main"
+                android:foreground="@drawable/image_main_foreground"
+                android:src="@mipmap/soket" />
+        </TableRow>
+
+        <TableRow
+            android:layout_gravity="center"
+            android:paddingTop="5dp">
+            <TextView
+                android:id="@+id/txtdt6x36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Điện toán 6x36" />
+
+            <TextView
+                android:id="@+id/txttt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Thần tài 4" />
+            <TextView
+                android:id="@+id/txtqt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Quay thử" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:paddingTop="5dp">
+
+            <ImageButton
+                android:id="@+id/imgtt"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:background="@drawable/image_main"
+                android:foreground="@drawable/image_main_foreground"
+                android:src="@mipmap/news" />
+
+            <ImageButton
+                android:id="@+id/imggt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:background="@drawable/image_main"
+                android:foreground="@drawable/image_main_foreground"
+                android:src="@mipmap/tracuu" />
+
+            <ImageButton
+                android:id="@+id/imgti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:background="@drawable/image_main"
+                android:foreground="@drawable/image_main_foreground"
+                android:src="@mipmap/cauhinh" />
+        </TableRow>
+        <TableRow
+            android:layout_gravity="center"
+            android:paddingTop="5dp">
+            <TextView
+                android:id="@+id/txttt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Tin tức" />
+
+            <TextView
+                android:id="@+id/txtgt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Giới thiệu" />
+
+            <TextView
+                android:id="@+id/txtti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Tiện ích" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
