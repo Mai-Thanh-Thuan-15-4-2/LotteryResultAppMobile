@@ -82,7 +82,27 @@
         <activity
             android:name=".ShowKQXSLAMDONG"
             android:exported="false"/>
-
+        <activity
+            android:name=".ShowKQXSBD"
+            android:exported="false"/>
+        <activity
+            android:name=".ShowKQXSBDH"
+            android:exported="false"/>
+        <activity
+            android:name=".ShowKQXSBL"
+            android:exported="false"/>
+        <activity
+            android:name=".ShowKQXSBP"
+            android:exported="false"/>
+        <activity
+            android:name=".ShowKQXSBT"
+            android:exported="false"/>
+        <activity
+            android:name=".ShowKQXSBTH"
+            android:exported="false"/>
+        <activity
+            android:name=".ShowKQXSCM"
+            android:exported="false"/>
         <activity
             android:name=".Home"
             android:exported="true">
