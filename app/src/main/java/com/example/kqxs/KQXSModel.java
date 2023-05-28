@@ -32,5 +32,13 @@ public class KQXSModel {
         this.date = date;
     }
 
+    @Override
+    public String toString() {
+        return "KQXSModel{" +
+                "title='" + title + '\'' +
+                ", description='" + description + '\'' +
+                ", date='" + date + '\'' +
+                '}';
+    }
 }
 

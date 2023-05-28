@@ -4,16 +4,45 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ListXSTheoDai extends AppCompatActivity {
+    private ListView listView;
+    private radioListAdapter adapter;
+    private List<radioModel> createStationList() {
+        List<radioModel> radios = new ArrayList<>();
+        radios.add(new radioModel("XỔ SỐ CẦN THƠ", "KẾT QUẢ XỔ SỐ CẦN THƠ", "https://kqxs.net.vn/rss-feed/xo-so-can-tho-xsct.rss"));
+        radios.add(new radioModel("XỔ SỐ ĐẮC LẮC", "KẾT QUẢ XỔ SỐ ĐẮC LẮC", "https://kqxs.net.vn/rss-feed/xo-so-dak-lak-xsdlk.rss"));
+        radios.add(new radioModel("XỔ SỐ ĐỒNG NAI", "KẾT QUẢ XỔ SỐ ĐỒNG NAI", "https://kqxs.net.vn/rss-feed/xo-so-dong-nai-xsdn.rss"));
+        radios.add(new radioModel("XỔ SỐ ĐÀ NẴNG", "KẾT QUẢ XỔ SỐ ĐÀ NẴNG", "https://kqxs.net.vn/rss-feed/xo-so-da-nang-xsdng.rss"));
+        radios.add(new radioModel("XỔ SỐ ĐẮC NÔNG", "KẾT QUẢ XỔ SỐ ĐẮC NÔNG", "https://kqxs.net.vn/rss-feed/xo-so-dak-nong-xsdno.rss"));
+        radios.add(new radioModel("XỔ SỐ ĐỒNG THÁP", "KẾT QUẢ XỔ SỐ ĐỒNG THÁP", "https://kqxs.net.vn/rss-feed/xo-so-dong-thap-xsdt.rss"));
+        radios.add(new radioModel("XỔ SỐ GIA LAI", "KẾT QUẢ XỔ SỐ GIA LAI", "https://kqxs.net.vn/rss-feed/xo-so-gia-lai-xsgl.rss"));
+        radios.add(new radioModel("XỔ SỐ TPHCM", "KẾT QUẢ XỔ SỐ TPHCM", "https://kqxs.net.vn/rss-feed/xo-so-tphcm-xshcm.rss"));
+        radios.add(new radioModel("XỔ SỐ HẬU GIANG", "KẾT QUẢ XỔ SỐ HẬU GIANG", "https://kqxs.net.vn/rss-feed/xo-so-hau-giang-xshg.rss"));
+        radios.add(new radioModel("XỔ SỐ KIÊNG GIANG", "KẾT QUẢ XỔ SỐ KIÊNG GIANG", "https://kqxs.net.vn/rss-feed/xo-so-kien-giang-xskg.rss"));
+        return radios;
+    }
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list_xstheodai);
         FloatingActionButton fab = findViewById(R.id.xstheodaiBackHome);
+
+        listView = findViewById(R.id.listViewDai);
+        // Tạo danh sách đài xổ số
+        List<radioModel> stationList = createStationList();
+
+        // Tạo adapter cho ListView
+        adapter = new radioListAdapter(this, stationList);
+        listView.setAdapter(adapter);
+
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -214,7 +243,7 @@ public class ListXSTheoDai extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        Button btn_cm= findViewById(R.id.kqxscm);
+        Button btn_cm = findViewById(R.id.kqxscm);
         btn_cm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
