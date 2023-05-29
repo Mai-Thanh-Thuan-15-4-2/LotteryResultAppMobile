@@ -29,6 +29,9 @@
             android:name=".ShowKQXSTNh"
             android:exported="false"/>
         <activity
+            android:name=".ShowKQXSKH"
+            android:exported="false"/>
+        <activity
             android:name=".ShowKQXSTTH"
             android:exported="false"/>
         <activity

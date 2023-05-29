@@ -106,6 +106,14 @@ public class ListXSTheoDai extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        Button btn_kh = findViewById(R.id.kqxskh);
+        btn_kh.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ListXSTheoDai.this, ShowKQXSKH.class);
+                startActivity(intent);
+            }
+        });
         Button btn_la = findViewById(R.id.kqxsla);
         btn_la.setOnClickListener(new View.OnClickListener() {
             @Override
