@@ -13,6 +13,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:theme="@style/WhiteTextTheme">
+
             <Button
                 android:id="@+id/kqxsag"
                 android:layout_height="wrap_content"
@@ -102,113 +103,6 @@
                 android:layout_height="wrap_content"
                 android:text="xổ số Cà Mau" />
 
-            <Button
-                android:id="@+id/kqxscantho"
-                android:layout_marginTop="8dp"
-                android:layout_width= "match_parent"
-                android:textSize="13dp"
-                android:layout_gravity="center"
-                android:foreground="@drawable/image_main_foreground"
-                android:background="@drawable/button_bg"
-                android:layout_height="wrap_content"
-                android:text="xổ số Cần Thơ" />
-            <Button
-                android:id="@+id/kqxsdl"
-                android:layout_marginTop="8dp"
-                android:layout_width= "match_parent"
-                android:textSize="13dp"
-                android:layout_gravity="center"
-                android:foreground="@drawable/image_main_foreground"
-                android:background="@drawable/button_bg"
-                android:layout_height="wrap_content"
-                android:text="xổ số Đắc Lắc" />
-
-            <Button
-                android:id="@+id/kqxsdo"
-                android:layout_marginTop="8dp"
-                android:layout_width= "match_parent"
-                android:textSize="13dp"
-                android:layout_gravity="center"
-                android:foreground="@drawable/image_main_foreground"
-                android:background="@drawable/button_bg"
-                android:layout_height="wrap_content"
-                android:text="xổ số Đồng Nai" />
-
-            <Button
-                android:id="@+id/kqxsda"
-                android:layout_marginTop="8dp"
-                android:layout_width= "match_parent"
-                android:textSize="13dp"
-                android:layout_gravity="center"
-                android:foreground="@drawable/image_main_foreground"
-                android:background="@drawable/button_bg"
-                android:layout_height="wrap_content"
-                android:text="xổ số Đà Nẵng" />
-
-            <Button
-                android:id="@+id/kqxsđn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="8dp"
-                android:background="@drawable/button_bg"
-                android:foreground="@drawable/image_main_foreground"
-                android:text="xổ số Đắc Nông"
-                android:textSize="13dp" />
-
-            <Button
-                android:id="@+id/kqxsdt"
-                android:layout_marginTop="8dp"
-                android:layout_width= "match_parent"
-                android:textSize="13dp"
-                android:layout_gravity="center"
-                android:foreground="@drawable/image_main_foreground"
-                android:background="@drawable/button_bg"
-                android:layout_height="wrap_content"
-                android:text="xổ số Đồng Tháp" />
-
-            <Button
-                android:id="@+id/kqxsgl"
-                android:layout_marginTop="8dp"
-                android:layout_width= "match_parent"
-                android:textSize="13dp"
-                android:foreground="@drawable/image_main_foreground"
-                android:layout_gravity="center"
-                android:background="@drawable/button_bg"
-                android:layout_height="wrap_content"
-                android:text="xổ số Gia Lai" />
-
-            <Button
-                android:id="@+id/kqxshcm"
-                android:layout_marginTop="8dp"
-                android:layout_width= "match_parent"
-                android:textSize="13dp"
-                android:layout_gravity="center"
-                android:foreground="@drawable/image_main_foreground"
-                android:background="@drawable/button_bg"
-                android:layout_height="wrap_content"
-                android:text="xổ số TP.HCM" />
-            <Button
-                android:id="@+id/kqxshg"
-                android:layout_marginTop="8dp"
-                android:layout_width= "match_parent"
-                android:textSize="13dp"
-                android:layout_gravity="center"
-                android:foreground="@drawable/image_main_foreground"
-                android:background="@drawable/button_bg"
-                android:layout_height="wrap_content"
-                android:text="xổ số Hậu Giang" />
-
-            <Button
-                android:id="@+id/kqxskg"
-                android:layout_marginTop="8dp"
-                android:layout_width= "match_parent"
-                android:textSize="13dp"
-                android:layout_gravity="center"
-                android:foreground="@drawable/image_main_foreground"
-                android:background="@drawable/button_bg"
-                android:layout_height="wrap_content"
-                android:text="xổ số Kiên Giang" />
 
             <Button
                 android:id="@+id/kqxskh"
@@ -389,7 +283,14 @@
                 android:background="@drawable/button_bg"
                 android:layout_height="wrap_content"
                 android:text="xổ số Vũng Tàu" />
+
+            <ListView
+                android:id="@+id/listViewDai"
+                android:layout_width="match_parent"
+                android:layout_height="600dp" />
         </LinearLayout>
+
+
     </ScrollView>
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         xmlns:app="http://schemas.android.com/apk/res-auto"
