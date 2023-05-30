@@ -23,6 +23,24 @@ import androidx.appcompat.app.AppCompatActivity;
                 }
             });
 
+            ImageButton imgkqxsmn = findViewById(R.id.imgkqmn);
+            imgkqxsmn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(Home.this, ShowKQXSMN.class);
+                    startActivity(intent);
+                }
+            });
+
+            ImageButton imgkqxsmt = findViewById(R.id.imgkqmt);
+            imgkqxsmt.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(Home.this, ShowKQXSMT.class);
+                    startActivity(intent);
+                }
+            });
+
         ImageButton imgkqtd = findViewById(R.id.imgkqd);
             imgkqtd.setOnClickListener(new View.OnClickListener() {
             @Override
