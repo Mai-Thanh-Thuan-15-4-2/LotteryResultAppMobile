@@ -63,5 +63,30 @@ import androidx.appcompat.app.AppCompatActivity;
                     startActivity(intent);
                 }
             });
+            ImageButton imggt = findViewById(R.id.imggt);
+            imggt.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(Home.this, GioiThieu.class);
+                    startActivity(intent);
+                }
+            });
+            ImageButton imgqt = findViewById(R.id.imgqt);
+            imgqt.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(Home.this, ListQuayThu.class);
+                    startActivity(intent);
+                }
+            });
+            ImageButton imgtk = findViewById(R.id.imgtt);
+            imgtk.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(Home.this, ShowXSDB.class);
+                    startActivity(intent);
+                }
+            });
+
      }
     }

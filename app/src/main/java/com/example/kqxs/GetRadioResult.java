@@ -8,7 +8,7 @@ public class GetRadioResult {
     }
 
     public int getSpecialPrize() {
-        String specialPrizeString = prizesString.substring(prizesString.indexOf("ĐB:") + 3, prizesString.indexOf("ĐB:") + 9).trim();
+        String specialPrizeString = prizesString.substring(prizesString.indexOf("ĐB:") + 3, prizesString.indexOf("ĐB:") + 10).trim();
         return Integer.parseInt(specialPrizeString);
     }
 

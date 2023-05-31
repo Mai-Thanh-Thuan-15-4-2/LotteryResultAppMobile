@@ -34,8 +34,9 @@ public class ShowKQXSAG extends AppCompatActivity {
         adapter = new KQXSAGAdapter(rssItems);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(adapter);
-
-       FloatingActionButton fab = findViewById(R.id.xsBackHome);
+        DatabaseSX dbHelper = new DatabaseSX(this);
+        PrintColumns.printColumns(dbHelper);
+        FloatingActionButton fab = findViewById(R.id.xsBackHome);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -46,22 +47,21 @@ public class ShowKQXSAG extends AppCompatActivity {
         loadRssAG();
     }
 
-    private void loadRssAG() {
+    public void loadRssAG() {
         new Thread(new Runnable() {
             @Override
             public void run() {
                 try {
                     Document rssDocument = Jsoup.connect("https://kqxs.net.vn/rss-feed/xo-so-an-giang-xsag.rss").get();
                     Elements items = rssDocument.select("item");
-                    for (Element item : items) {
+                    for (int i = 0; i < 6; i++) {
+                        Element item = items.get(i);
                         String title = item.selectFirst("title").text();
                         String des = item.selectFirst("description").text();
                         String pubDate = item.selectFirst("pubDate").text();
                         KQXSModel kqxsag = new KQXSModel(title, des, pubDate);
                         rssItems.add(kqxsag);
                     }
-
-                    System.out.println("KQXS AG: " + rssItems);
                     runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
