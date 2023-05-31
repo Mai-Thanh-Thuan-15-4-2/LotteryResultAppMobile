@@ -15,6 +15,18 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".ListTicket"
+            android:exported="false" />
+        <activity
+            android:name=".InsertTicket"
+            android:exported="false" />
+        <activity
+            android:name=".ResultCheckTickets"
+            android:exported="false" />
+        <activity
+            android:name=".MenuCheckTicket"
+            android:exported="false" />
+        <activity
             android:name=".ShowKQXSMN"
             android:exported="false" />
         <activity

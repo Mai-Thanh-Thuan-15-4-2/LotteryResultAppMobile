@@ -223,7 +223,7 @@
                 android:src="@mipmap/tracuu" />
 
             <ImageButton
-                android:id="@+id/imgti"
+                android:id="@+id/imgdoso"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="23dp"
@@ -254,7 +254,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Tiện ích" />
+                android:text="Dò vé só" />
         </TableRow>
     </TableLayout>
 

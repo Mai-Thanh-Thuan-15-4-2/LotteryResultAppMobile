@@ -81,5 +81,14 @@ import androidx.appcompat.app.AppCompatActivity;
                     startActivity(intent);
                 }
             });
-     }
+
+            ImageButton imgdoso = findViewById(R.id.imgdoso);
+            imgdoso.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(Home.this, MenuCheckTicket.class);
+                    startActivity(intent);
+                }
+            });
+        }
     }
