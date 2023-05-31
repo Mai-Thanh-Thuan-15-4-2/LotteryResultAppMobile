@@ -210,7 +210,7 @@
                 android:layout_marginRight="23dp"
                 android:background="@drawable/image_main"
                 android:foreground="@drawable/image_main_foreground"
-                android:src="@mipmap/news" />
+                android:src="@mipmap/thongkexs" />
 
             <ImageButton
                 android:id="@+id/imggt"
@@ -240,14 +240,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Tin tức" />
+                android:text="Thống kê" />
 
             <TextView
                 android:id="@+id/txtgt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Giới thiệu" />
+                android:text="Giải thưởng" />
 
             <TextView
                 android:id="@+id/txtti"

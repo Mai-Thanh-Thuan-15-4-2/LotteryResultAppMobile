@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -128,6 +129,21 @@
         <activity
             android:name=".ShowKQXSMT"
             android:exported="false" />
+        <activity
+            android:name=".GioiThieu"
+            android:exported="false"/>
+        <activity
+            android:name=".ListQuayThu"
+            android:exported="false"/>
+        <activity
+            android:name=".ShowQuayThuMn"
+            android:exported="false"/>
+        <activity
+            android:name=".ShowQuayThuMb"
+            android:exported="false"/>
+        <activity
+        android:name=".ShowXSDB"
+        android:exported="true"/>
         <activity
             android:name=".Home"
             android:exported="true">

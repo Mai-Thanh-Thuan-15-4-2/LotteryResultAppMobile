@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">KQXS</string>
-    <string-array name="loai_ve_so_array">
+    <string name="select_province">Chọn tỉnh/thành phố</string>
+      <string-array name="loai_ve_so_array">
         <item>Xổ số Cần Thơ</item>
         <item>Xổ số Hậu Giang</item>
         <item>Xổ số Đồng Nai</item>

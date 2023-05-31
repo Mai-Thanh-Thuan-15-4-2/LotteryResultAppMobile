@@ -23,7 +23,7 @@ public class ShowKQXSLA extends AppCompatActivity {
 
     private ArrayList<KQXSModel> rssItems;
     private RecyclerView recyclerView;
-    private KQXSVLAdapter adapter;
+    private KQXSLAAdapter adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,7 +32,7 @@ public class ShowKQXSLA extends AppCompatActivity {
 
         rssItems = new ArrayList<>();
         recyclerView = findViewById(R.id.recyclerView);
-        adapter = new KQXSVLAdapter(rssItems);
+        adapter = new KQXSLAAdapter(rssItems);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(adapter);
 
