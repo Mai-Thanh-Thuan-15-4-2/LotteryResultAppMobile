@@ -13,7 +13,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 public class ShowXSDB extends AppCompatActivity {
 
     private RecyclerView recyclerView;
-    private KQXSDBAdapter adapter;
+    private KQXSDatabaseAdapter adapter;
     private DatabaseSX dbHelper;
     private FloatingActionButton fab;
 
@@ -24,7 +24,7 @@ public class ShowXSDB extends AppCompatActivity {
 
         recyclerView = findViewById(R.id.list_view);
         dbHelper = new DatabaseSX(this);
-        adapter = new KQXSDBAdapter(dbHelper.getAllKQXS());
+        adapter = new KQXSDatabaseAdapter(dbHelper.getAllKQXS(), this);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(adapter);
         fab = findViewById(R.id.tkxsBackHome);

@@ -30,7 +30,7 @@ public class DatabaseSX extends SQLiteOpenHelper {
     @SuppressLint("Range")
     public List<XSDB> getAllKQXS() {
         List<XSDB> kqxsList = new ArrayList<>();
-        String selectQuery = "SELECT  * FROM " + TABLE_NAME;
+        String selectQuery = " SELECT *  FROM " + TABLE_NAME;
 
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor cursor = db.rawQuery(selectQuery, null);

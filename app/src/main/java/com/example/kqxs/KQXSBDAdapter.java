@@ -29,7 +29,7 @@ public class KQXSBDAdapter extends RecyclerView.Adapter<KQXSBDAdapter.RssViewHol
         KQXSModel kqxsModel = rssItems.get(position);
         holder.textViewTitle.setText(kqxsModel.getTitle());
         holder.textViewDate.setText(kqxsModel.getDate());
-        holder.textViewDB.setText(getDBString(kqxsModel.getDescription()));
+        holder.textViewDB.setText(getDBString(kqxsModel.getDescription(), new DatabaseSX(holder.itemView.getContext())));
         holder.textViewG1.setText(getG1String(kqxsModel.getDescription()));
         holder.textViewG2.setText(getG2String(kqxsModel.getDescription()));
         holder.textViewG3.setText(getG3String(kqxsModel.getDescription()));
@@ -40,9 +40,10 @@ public class KQXSBDAdapter extends RecyclerView.Adapter<KQXSBDAdapter.RssViewHol
         holder.textViewG8.setText(getG8String(kqxsModel.getDescription()));
     }
 
-    private String getDBString(String description) {
+    private String getDBString(String description, DatabaseSX databaseSX) {
         GetKQXS parser = new GetKQXS(description);
         String DB = String.valueOf(parser.getSpecialPrize());
+        databaseSX.insertData(DB);
         return  DB;
     }
     private String getG1String(String description) {
