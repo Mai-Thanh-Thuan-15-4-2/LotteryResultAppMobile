@@ -15,7 +15,7 @@
         android:layout_marginTop="10dp"
         android:textAlignment="center"
         android:textColor="@color/purple_500"
-        android:textSize="16sp"
+        android:textSize="15sp"
         android:textStyle="bold" />
 
     <TextView
