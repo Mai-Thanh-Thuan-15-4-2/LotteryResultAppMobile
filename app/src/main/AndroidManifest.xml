@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
@@ -15,102 +16,107 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".ShowKQXSMN"
+            android:exported="false" />
+        <activity
             android:name=".ShowKQXSMB"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".ListXSTheoDai"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".Calender"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".ShowKQXSAG"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".ShowKQXSTNh"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".ShowKQXSKH"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".ShowKQXSTTH"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".ShowKQXSTV"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".ShowKQXSVL"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".ShowKQXSVT"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".ShowKQXSKT"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".ShowKQXSLA"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".ShowKQXSDT123"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".ShowKQXSDT636"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".ShowKQXSTT4"
-            android:exported="false"/>
-        <!---->
+            android:exported="false" /> <!--  -->
         <activity
             android:name=".ShowKQXSTG"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".ShowKQXSSOC"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".ShowKQXSQT"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".ShowKQXSQNAM"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".ShowKQXSQN"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".ShowKQXSQB"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".ShowKQXSPY"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".ShowKQXSNT"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".ShowKQXSLAMDONG"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".ShowKQXSBD"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".ShowKQXSBDH"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".ShowKQXSBL"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".ShowKQXSBP"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".ShowKQXSBT"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".ShowKQXSBTH"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".ShowKQXSCM"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".radioResultController"
-            android:exported="false"/>
+            android:exported="false" />
+        <activity
+            android:name=".ShowKQXSMT"
+            android:exported="false" />
         <activity
             android:name=".GioiThieu"
             android:exported="false"/>
@@ -131,8 +137,10 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
+
 </manifest>

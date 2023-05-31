@@ -31,7 +31,7 @@
             android:layout_gravity="center"
             android:paddingTop="15dp" >
             <ImageButton
-                android:id="@+id/igmkqmn"
+                android:id="@+id/imgkqmn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="23dp"
@@ -40,7 +40,7 @@
                 android:foreground="@drawable/image_main_foreground"
                 android:src="@mipmap/xsmn" />
             <ImageButton
-                android:id="@+id/imkqmt"
+                android:id="@+id/imgkqmt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="23dp"
