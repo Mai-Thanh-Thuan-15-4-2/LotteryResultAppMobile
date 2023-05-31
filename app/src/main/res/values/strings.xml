@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">KQXS</string>
+    <string name="select_province">Chọn tỉnh/thành phố</string>
 </resources>
