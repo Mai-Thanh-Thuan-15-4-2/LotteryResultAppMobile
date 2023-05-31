@@ -44,76 +44,39 @@ public class KQXSAdapter extends RecyclerView.Adapter<KQXSAdapter.RssViewHolder>
 
     private String getDBString(String description) {
         GetRadioResult parser = new GetRadioResult(description);
-        String DB = String.valueOf(parser.getSpecialPrize());
-        return  DB;
+        return  parser.getSpecialPrize();
     }
     private String getG1String(String description) {
         GetRadioResult parser = new GetRadioResult(description);
-        String G1 = String.valueOf(parser.getFirstPrize());
-        return  G1;
+        return  parser.getFirstPrize();
     }
     private String getG2String(String description) {
         GetRadioResult parser = new GetRadioResult(description);
-        int[] g2 = parser.getSecondPrize();
-        String g2String = "";
-        for (int kq: g2) {
-            g2String += kq + " ";
-        }
-        return  g2String;
+        return  parser.getSecondPrize();
     }
     private String getG3String(String description) {
         GetRadioResult parser = new GetRadioResult(description);
-        int[] g3 = parser.getThirdPrize();
-        String g3String = "";
-        for (int kq: g3) {
-            g3String += kq + " ";
-        }
-        return g3String;
+        return parser.getThirdPrize();
     }
     private String getG4String(String description) {
         GetRadioResult parser = new GetRadioResult(description);
-        int[] g4 = parser.getFourthPrize();
-        String g4String = "";
-        for (int kq: g4) {
-            g4String += kq + " ";
-        }
-        return  g4String;
+        return   parser.getFourthPrize();
     }
     private String getG5String(String description) {
         GetRadioResult parser = new GetRadioResult(description);
-        int[] g5 = parser.getFifthPrize();
-        String g5String = "";
-        for (int kq: g5) {
-            g5String += kq + " ";
-        }
-        return g5String;
+        return parser.getFifthPrize();
     }
     private String getG6String(String description) {
         GetRadioResult parser = new GetRadioResult(description);
-        int[] g6 = parser.getSixthPrize();
-        String g6String = "";
-        for (int kq: g6) {
-            g6String += kq + " ";
-        }
-        return  g6String;
+        return  parser.getSixthPrize();
     }
     private String getG7String(String description) {
         GetRadioResult parser = new GetRadioResult(description);
-        int[] g7 = parser.getSeventhPrize();
-        String g7String = "";
-        for (int kq: g7) {
-            g7String += kq + " ";
-        }
-        return  g7String;
+        return  parser.getSeventhPrize();
     }
     private String getG8String(String description) {
         GetRadioResult parser = new GetRadioResult(description);
-        int[] g8 = parser.getEighthPrize();
-        String g8String = "";
-        for (int kq: g8) {
-            g8String += kq + " ";
-        }
-        return  g8String;
+        return  parser.getEighthPrize();
     }
 
     @Override
