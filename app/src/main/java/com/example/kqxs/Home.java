@@ -105,6 +105,14 @@ import androidx.appcompat.app.AppCompatActivity;
                     startActivity(intent);
                 }
             });
+            ImageButton imgmuavs = findViewById(R.id.imgmuavs);
+            imgmuavs.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(Home.this, ShowVeSo.class);
+                    startActivity(intent);
+                }
+            });
 
      }
     }

@@ -240,7 +240,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Thống kê" />
+                android:text="Thống kê DB" />
 
             <TextView
                 android:id="@+id/txtgt"
@@ -255,6 +255,32 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="Tiện ích" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:paddingTop="5dp">
+
+            <ImageButton
+                android:id="@+id/imgmuavs"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:background="@drawable/image_main"
+                android:foreground="@drawable/image_main_foreground"
+                android:src="@mipmap/veso" />
+        </TableRow>
+        <TableRow
+            android:layout_gravity="center"
+            android:paddingTop="5dp">
+            <TextView
+                android:id="@+id/txtmuavs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Mua VS Online" />
         </TableRow>
     </TableLayout>
 

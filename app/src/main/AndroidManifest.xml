@@ -131,7 +131,13 @@
             android:exported="false"/>
         <activity
         android:name=".ShowXSDB"
-        android:exported="true"/>
+        android:exported="false"/>
+        <activity
+            android:name=".ShowVeSo"
+            android:exported="false"/>
+        <activity
+            android:name=".ThemKH"
+            android:exported="false"/>
         <activity
             android:name=".Home"
             android:exported="true">
