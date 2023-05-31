@@ -14,12 +14,11 @@
         android:layout_height="wrap_content"
         android:textColor="@color/transparent"/>
     <TextView
-        android:id="@+id/value_tentinh"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
         android:layout_toRightOf="@id/id_vs"
-        android:text="Thông tin đặt hàng"
+        android:text="Thêm vé số"
         android:textColor="@color/blue_500"
         android:textSize="30dp" />
     <TextView
@@ -29,12 +28,12 @@
         android:textAlignment="center"
         android:layout_marginTop="50dp"
         android:layout_toRightOf="@id/id_vs"
-        android:text="Họ tên: "
+        android:text="Tên tỉnh: "
         android:textColor="@color/blue_grey_700"
         android:textSize="20dp" />
 
     <EditText
-        android:id="@+id/value_hoten"
+        android:id="@+id/value_tentinh"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="100dp"
@@ -44,17 +43,16 @@
         android:textSize="20dp" />
 
     <TextView
-        android:id="@+id/value_soluonglb"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:textAlignment="center"
         android:layout_marginTop="83dp"
         android:layout_toRightOf="@id/id_vs"
-        android:text="Điện thoại: "
+        android:text="Dãy số: "
         android:textColor="@color/blue_grey_700"
         android:textSize="20dp" />
     <EditText
-        android:id="@+id/value_sdt"
+        android:id="@+id/value_dayso"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="100dp"
@@ -68,11 +66,11 @@
         android:textAlignment="center"
         android:layout_marginTop="120dp"
         android:layout_toRightOf="@id/id_vs"
-        android:text="Địa chỉ: "
+        android:text="Ngày xổ: "
         android:textColor="@color/blue_grey_700"
         android:textSize="20dp" />
     <EditText
-        android:id="@+id/value_dc"
+        android:id="@+id/value_ngayxo"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="100dp"
@@ -98,36 +96,18 @@
         android:layout_toRightOf="@id/id_vs"
         android:textColor="@color/blue_grey_700"
         android:textSize="20dp" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:textAlignment="center"
-        android:layout_marginTop="200dp"
-        android:layout_toRightOf="@id/id_vs"
-        android:text="Số chọn: "
-        android:textColor="@color/blue_grey_700"
-        android:textSize="20dp" />
-    <EditText
-        android:id="@+id/value_sm"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="190dp"
-        android:layout_toRightOf="@id/id_vs"
-        android:textColor="@color/blue_grey_700"
-        android:textSize="20dp" />
     <Button
         android:id="@+id/button_tt"
-        android:text="Đặt mua"
+        android:text="Thêm"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="200dp"
-        android:layout_marginTop="250dp"
+        android:layout_marginTop="220dp"
         android:background="@drawable/bg_spinner"
         android:foreground="@drawable/image_main_foreground" />
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/dhBackHome"
+        android:id="@+id/themvsBackHome"
         android:layout_width="wrap_content"
         android:layout_marginTop="-5dp"
         android:layout_height="wrap_content"

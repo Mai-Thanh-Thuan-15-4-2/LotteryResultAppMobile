@@ -105,6 +105,15 @@ import androidx.appcompat.app.AppCompatActivity;
                     startActivity(intent);
                 }
             });
+          
+            ImageButton imgdoso = findViewById(R.id.imgdoso);
+            imgdoso.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(Home.this, MenuCheckTicket.class);
+                    startActivity(intent);
+                }
+            });
             ImageButton imgmuavs = findViewById(R.id.imgmuavs);
             imgmuavs.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -113,6 +122,13 @@ import androidx.appcompat.app.AppCompatActivity;
                     startActivity(intent);
                 }
             });
-
+            ImageButton imgadmin = findViewById(R.id.imgadmin);
+            imgadmin.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(Home.this, Themveso.class);
+                    startActivity(intent);
+                }
+            });
      }
     }

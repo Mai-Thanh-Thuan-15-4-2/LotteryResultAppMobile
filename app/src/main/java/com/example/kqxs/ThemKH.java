@@ -1,5 +1,7 @@
 package com.example.kqxs;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -10,11 +12,15 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 public class ThemKH extends AppCompatActivity {
     private EditText edtHoten, edtSdt, edtDc, edtSlm, edtSm;
     private Button btnDathang;
     private DatabaseCus databaseCus;
+    FloatingActionButton fab;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +31,14 @@ public class ThemKH extends AppCompatActivity {
         edtDc = findViewById(R.id.value_dc);
         edtSlm = findViewById(R.id.value_slm);
         edtSm = findViewById(R.id.value_sm);
+        fab = findViewById(R.id.dhBackHome);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ThemKH.this, Home.class);
+                startActivity(intent);
+            }
+        });
 
         btnDathang = findViewById(R.id.button_tt);
         btnDathang.setOnClickListener(new View.OnClickListener() {

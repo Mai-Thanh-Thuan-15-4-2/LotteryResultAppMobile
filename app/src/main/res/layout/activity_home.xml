@@ -223,7 +223,7 @@
                 android:src="@mipmap/tracuu" />
 
             <ImageButton
-                android:id="@+id/imgti"
+                android:id="@+id/imgdoso"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="23dp"
@@ -254,7 +254,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Tiện ích" />
+                android:text="Dò vé só" />
         </TableRow>
         <TableRow
             android:layout_width="match_parent"
@@ -271,6 +271,15 @@
                 android:background="@drawable/image_main"
                 android:foreground="@drawable/image_main_foreground"
                 android:src="@mipmap/veso" />
+            <ImageButton
+                android:id="@+id/imgadmin"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:background="@drawable/image_main"
+                android:foreground="@drawable/image_main_foreground"
+                android:src="@mipmap/acc" />
         </TableRow>
         <TableRow
             android:layout_gravity="center"
@@ -281,6 +290,12 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="Mua VS Online" />
+            <TextView
+                android:id="@+id/txtadmin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Admin" />
         </TableRow>
     </TableLayout>
 
